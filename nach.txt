@@ -1,0 +1,37 @@
+COMPILA Y SUBE EL CODIGO
+truffle deploy
+
+COMPILA Y CONVIERTE EL CODIGO EN PRODUCCION
+truffle compile
+
+truffle migrate 
+ejecuta el compile y el deploy
+
+CONSOLA DE BLOCKCHAIN
+truffle console
+//===========================================================================================
+guardar el contrato en un  variable par porder tener acceso a al contrato
+TaskContract = await TasksContract.deployed()
+
+para poder ver lo parametros de la tare 0
+task = await TaskContract.tasks(0)
+
+DIRECION DEL contrato
+TaskContract.address
+
+VALOR DEL CONTADOR
+ DEVUELVE EN BINARIO 
+ contador = await TaskContract.tasksCountert()
+CONVERTIR EN NUMERO
+contador.toNumber()
+
+CREAR UNA TAREA
+await TaskContract.createTask("titulo","esto es decripcion")
+VER UNA TARE EN LA VARIABLE T1
+t1=await TaskContract.tasks(0)
+
+//===========================================================================================
+documentacion para el testo
+    // https://trufflesuite.com/docs/truffle/testing/writing-tests-in-javascript
+    // https://www.chaijs.com/
+//===========================================================================================
