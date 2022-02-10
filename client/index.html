@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./main.css">
+  <title>DAPP Task</title>
+</head>
+
+<body>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card card-body rounded-0 mb-4 bg-dark">
+          <h1>DApp</h1>
+          <h6 clas="text-muted">Desentralizado App Task</h6>
+          <span>Wallet</span>
+          <span>1212212312312</span>
+        </div>
+
+        <form class="card card-body bg-dark rounded-0" action="" id="taskForm">
+          <h4>Guarda una tarea</h4>
+          <input 
+          name="title"
+          type="text" 
+          class="form-control bg-dark text-white rounded-0 border-0 my-4"
+           placeholder="Escribe una tarea">
+          <textarea 
+          name="description" 
+          rows="2" 
+          class="form-control bg-dark text-white rounded-0 border-0 my-4" 
+           placeholder="Tengo que hacaer..."></textarea>
+          <button  class="btn btn-outline-primary">Guardar</button>
+        </form>
+
+      </div>
+      <div class="col-md-8">
+        <div class="card bg-dark">
+          Lista de tareas
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./libs/@truffle/contract/dist/truffle-contract.min.js"></script>
+  <script src="./app.js"></script>
+  <script src="./ui.js"></script>
+</body>
+</html>
